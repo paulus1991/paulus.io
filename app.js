@@ -1,4 +1,4 @@
-// BUDGET CONTROLLER
+
 var budgetController = (function() {
     
     var Expense = function(id, description, value) {
@@ -154,7 +154,7 @@ var budgetController = (function() {
 
 
 
-// UI CONTROLLER
+
 var UIController = (function() {
     
     var DOMstrings = {
@@ -354,26 +354,26 @@ var controller = (function(budgetCtrl, UICtrl) {
     
     var updateBudget = function() {
         
-        // 1. Calculate  
+       
         budgetCtrl.calculateBudget();
         
-        // 2. Return  
+         
         var budget = budgetCtrl.getBudget();
         
-        // 3. Display  
+  
         UICtrl.displayBudget(budget);
     };
     
     
     var updatePercentages = function() {
         
-        // 1. Calculate  
+   
         budgetCtrl.calculatePercentages();
         
-        // 2. Read percentages  
+      
         var percentages = budgetCtrl.getPercentages();
         
-        // 3. Update  
+    
         UICtrl.displayPercentages(percentages);
     };
     
